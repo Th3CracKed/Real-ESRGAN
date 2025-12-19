@@ -1,5 +1,7 @@
 # Real-ESRGAN Video Upscaler - RunPod Serverless Worker
 
+[![RunPod](https://api.runpod.io/badge/Th3CracKed/Real-ESRGAN)](https://console.runpod.io/hub/Th3CracKed/Real-ESRGAN)
+
 RunPod serverless worker for upscaling videos using Real-ESRGAN. Converts 720p (1280x720) videos to 1080p (1920x1080) with AI-powered super-resolution.
 
 ## Features

@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "name": "video_upscale_720p_to_1080p",
+      "input": {
+        "video": "BASE64_ENCODED_TEST_VIDEO_HERE",
+        "scale": 1.5
+      },
+      "timeout": 300000
+    }
+  ],
+  "config": {
+    "gpuTypeId": "NVIDIA GeForce RTX 4090",
+    "gpuCount": 1,
+    "env": [
+      {
+        "key": "MODEL_NAME",
+        "value": "RealESRGAN_x4plus"
+      }
+    ],
+    "allowedCudaVersions": [
+      "12.7",
+      "12.6",
+      "12.5",
+      "12.4",
+      "12.3",
+      "12.2",
+      "12.1",
+      "12.0",
+      "11.8"
+    ]
+  }
+}

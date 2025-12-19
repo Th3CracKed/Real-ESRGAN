@@ -1,0 +1,36 @@
+{
+  "title": "Real-ESRGAN Video Upscaler",
+  "description": "AI-powered video upscaling from 720p to 1080p using Real-ESRGAN. Frame-by-frame super-resolution with GPU acceleration for high-quality video enhancement.",
+  "type": "serverless",
+  "category": "video",
+  "iconUrl": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN/master/assets/logo.png",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 25,
+    "presets": [
+      {
+        "name": "General Video (1.5x scale)",
+        "defaults": {
+          "MODEL_NAME": "RealESRGAN_x4plus"
+        }
+      },
+      {
+        "name": "Anime Video (1.5x scale)",
+        "defaults": {
+          "MODEL_NAME": "realesr-animevideov3"
+        }
+      }
+    ],
+    "env": [
+      {
+        "key": "MODEL_NAME",
+        "input": {
+          "name": "Model Selection",
+          "type": "string",
+          "description": "Choose model: RealESRGAN_x4plus (general) or realesr-animevideov3 (anime videos)",
+          "default": "RealESRGAN_x4plus"
+        }
+      }
+    ]
+  }
+}

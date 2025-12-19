@@ -1,0 +1,6 @@
+{
+  "input": {
+    "video": "BASE64_ENCODED_VIDEO_HERE",
+    "scale": 1.5
+  }
+}
